@@ -1,0 +1,280 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.todo-container {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    margin-top: 20px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.head-title,
+.head-add {
+    margin: 0 30px;
+    color: black;
+}
+
+.head-title {
+    font-size: 40px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.span {
+    font-weight: lighter;
+    opacity: 0.4;
+}
+
+.head-add {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    color: grey;
+    cursor: pointer;
+}
+
+.add-btn {
+    width: 30px;
+    height: 30px;
+    display: flex;
+    border: 1px solid transparent;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+    padding: 10px;
+    border-radius: 50%;
+    color: #fff;
+    cursor: pointer;
+    background-color: red;
+}
+
+hr {
+    width: 80%;
+    float: right;
+}
+
+.page-todo-container {
+    width: 100%;
+    height: auto;
+    margin: 30px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.line {
+    width: 100px;
+    height: 1px;
+    margin: 0 10px;
+    border: 1px solid;
+}
+
+.list-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 25px;
+}
+
+.todo-card {
+    width: 180px;
+    height: 300px;
+    border-radius: 10px;
+    margin: 12px 16px;
+    border: 1px solid red;
+    box-shadow: 8px 8px 10px rgba(128, 128, 128, 0.5);
+}
+
+.div {
+    width: 100%;
+    height: auto;
+    display: flex;
+    font-family: sans-serif;
+    text-transform: capitalize;
+    align-items: center;
+    font-size: 1.2em;
+}
+
+.card-head {
+    width: 100%;
+    height: auto;
+    text-align: center;
+    padding: 0.6em 0;
+    font-size: 1.3em;
+    color: red;
+    font-weight: lighter;
+    font-family: sans-serif;
+}
+
+.p {
+    text-align: center;
+    margin: 40px 0 20px 0;
+    font-family: sans-serif;
+    letter-spacing: 1px;
+    font-size: 1.2em;
+    font-weight: normal;
+    text-decoration: line-through 2px;
+    color: red;
+}
+
+.task {
+    margin: 0 8px;
+    width: 18px;
+    height: 18px;
+}
+
+
+/* card.html */
+
+.fas {
+    font-size: 15px;
+}
+
+.back {
+    color: #000;
+    margin: 25px 0;
+}
+
+.list-card {
+    width: 290px;
+    position: relative;
+}
+
+.list-head {
+    margin-bottom: 0;
+    margin-top: 25px;
+    width: 100%;
+    font-size: 20px;
+    height: auto;
+    text-align: center;
+    color: red;
+}
+
+.hr {
+    color: #000;
+    width: 200px;
+}
+
+.div2 {
+    width: 100%;
+    display: flex;
+    margin-left: -10px;
+    align-items: center;
+    justify-content: center;
+    letter-spacing: 1px;
+}
+
+.para {
+    color: #000;
+    text-transform: capitalize;
+}
+
+.div-circle {
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    border-radius: 50%;
+    bottom: 0;
+    right: 0;
+    background-color: red;
+    margin: 0 10px 10px 0;
+}
+
+.div-circle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    cursor: pointer;
+}
+
+.blur {
+    filter: blur(5px);
+}
+
+
+/* add card styling */
+
+.addcard-container {
+    position: fixed;
+    z-index: 4;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.addcard-inner-container {
+    position: absolute;
+    width: 500px;
+    height: 200px;
+    display: grid;
+    text-align: center;
+    align-content: center;
+    border: 1px solid red;
+    border-radius: 8px;
+    background-color: #fff;
+}
+
+.addcard-text {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: red;
+    letter-spacing: 2px;
+    text-transform: capitalize;
+    font-size: 25px;
+}
+
+.addcard-btn {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.addcard-input {
+    width: 100%;
+}
+
+.addcardbtn {
+    width: 100px;
+    height: 40px;
+    border: none;
+    background-color: red;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 18px;
+    cursor: pointer;
+    outline: none;
+    border-radius: 50px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+input {
+    width: 80%;
+    height: 40px;
+    border-radius: 6px;
+    box-shadow: 3px 3px 5px rgba(128, 128, 128, 0.5);
+    border: 1px solid red;
+    outline: none;
+    font-size: 20px;
+    letter-spacing: 1px;
+    margin: 20px 0;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-left: 5px;
+}
